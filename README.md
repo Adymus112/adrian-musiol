@@ -2,7 +2,7 @@
 
 Programista w obszarze AI, automatyzacji i analizy danych. Buduję systemy oparte na agentach LLM, integracje przez API oraz narzędzia do pracy z danymi. Dostępny do zleceń freelancerskich realizowanych zadaniowo.
 
-[E-mail](mailto:info@abmusiol.com) · [LinkedIn](https://www.linkedin.com/in/adrian-musioł-a8a575367) · [www.abmusiol.com](https://www.abmusiol.com)
+[E-mail](mailto:info@abmusiol.com) · [LinkedIn](https://www.linkedin.com/in/adrian-musioł-a8a575367) · [Strona projektu ADYMUS](https://sites.google.com/abmusiol.com/ai-factory/strona-g%C5%82%C3%B3wna/projekt-adymus)
 
 ## Obszary pracy
 
@@ -40,9 +40,11 @@ Autorski system operacyjny dla mikroprzedsiębiorstw (JDG), sterowany głosem. Z
 - **Human-in-the-loop:** zapis do bazy następuje wyłącznie po potwierdzeniu „TAK” przez użytkownika, a wykonuje go osobna bramka (HITL Gateway).
 - **Multi-tenant:** izolacja danych firm przez `tenant_id` i Row Level Security w PostgreSQL.
 - **Router intencji:** proste, powtarzalne komendy są mapowane na funkcje bez wywołania LLM, co obniża koszt i opóźnienie.
+- **Kanały i multimodalność:** obsługa przez głos, WhatsApp i SMS oraz analiza zdjęć (np. zdjęcie pustej półki zapisuje brak w magazynie).
+- **Strażnik (Guardian):** izolacja procesów i weryfikacja najważniejszych zmian przez człowieka.
 - **Integracje:** GUS BIR1, Google Workspace, KSeF, Stripe, wyszukiwarka prawa, scraper cen B2B.
 
-Więcej: [docs/adymus.md](docs/adymus.md).
+Więcej: [docs/adymus.md](docs/adymus.md) oraz [strona projektu](https://sites.google.com/abmusiol.com/ai-factory/strona-g%C5%82%C3%B3wna/projekt-adymus).
 
 ## Wykształcenie i certyfikaty
 
