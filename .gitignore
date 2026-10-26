@@ -1,0 +1,10 @@
+.env
+Adymus_readme.md
+agents-architecture.md
+excalidraw.md
+.env.*
+*.log
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
