@@ -1,0 +1,146 @@
+@page {
+  size: A4;
+  margin: 15mm 16mm 16mm;
+}
+
+:root {
+  --text: #1f2328;
+  --muted: #59636e;
+  --accent: #1d4e89;
+  --line: #d1d9e0;
+  --soft: #f3f5f8;
+}
+
+html {
+  font-size: 9.6pt;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Kotwice nagłówków z GitHuba nie mają sensu na papierze. */
+.anchor,
+.octicon {
+  display: none;
+}
+
+.markdown-heading,
+h1,
+h2,
+h3 {
+  break-after: avoid;
+}
+
+h1 {
+  margin: 0 0 4pt;
+  font-size: 23pt;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin: 15pt 0 6pt;
+  padding-bottom: 3pt;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  font-size: 12.5pt;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 10pt 0 4pt;
+  font-size: 10.5pt;
+  font-weight: 600;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 6pt;
+}
+
+ul,
+ol {
+  padding-left: 15pt;
+}
+
+li {
+  margin: 1pt 0;
+}
+
+/* Akapit pod imieniem i linia kontaktowa na pierwszej stronie. */
+.doc:first-child > .markdown-heading:first-child + p {
+  font-size: 10.5pt;
+}
+
+.doc:first-child > .markdown-heading:first-child + p + p {
+  padding-bottom: 6pt;
+  border-bottom: 2px solid var(--accent);
+  color: var(--muted);
+}
+
+code {
+  padding: 0 3px;
+  border-radius: 3px;
+  background: var(--soft);
+  font-family: Consolas, "Cascadia Mono", monospace;
+  font-size: 0.92em;
+}
+
+table {
+  width: 100%;
+  margin: 4pt 0 8pt;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+
+th,
+td {
+  padding: 3.5pt 6pt;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--soft);
+  font-weight: 600;
+}
+
+tr {
+  break-inside: avoid;
+}
+
+td:first-child {
+  white-space: nowrap;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 118mm;
+  margin: 6pt auto 8pt;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.doc + .doc,
+.page-break {
+  break-before: page;
+}
+
+.page-break + .markdown-heading h2 {
+  margin-top: 0;
+}
